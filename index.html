@@ -1,94 +1,331 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contrato de Garantía - Cavagnaro Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contrato de garantía limitada de suscripción Canva Pro Educación - Cavagnaro Store" />
+  <title>Contrato de Garantía | Cavagnaro Store</title>
+
   <style>
+    :root {
+      --primary: #1f3c88;
+      --primary-dark: #162d63;
+      --secondary: #4b5563;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --background: #f3f4f6;
+      --white: #ffffff;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px;
     }
-    h1 {
-      color: #2c3e50;
-    }
-    h2 {
-      color: #34495e;
-      margin-top: 30px;
-    }
-    p {
-      line-height: 1.6;
-    }
+
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 950px;
+      margin: 0 auto;
+      background-color: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 36px 32px;
+    }
+
+    .header h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      line-height: 1.2;
+      letter-spacing: 0.4px;
+    }
+
+    .header p {
+      margin: 6px 0;
+      font-size: 1rem;
+      opacity: 0.97;
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    .section {
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin: 0 0 12px;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 12px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .card {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .card strong {
+      display: block;
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      padding: 16px 18px;
+      background: #f9fafb;
+      border-left: 4px solid var(--primary);
       border-radius: 10px;
+      color: var(--secondary);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 10px;
+      }
+
+      .header,
+      .content {
+        padding: 22px 18px;
+      }
+
+      .header h1 {
+        font-size: 1.55rem;
+      }
+
+      h2 {
+        font-size: 1.08rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .container {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+      }
+
+      .header {
+        background: #fff !important;
+        color: #000 !important;
+        border-bottom: 2px solid #000;
+      }
+
+      h2 {
+        color: #000;
+      }
+
+      .card,
+      .footer-note {
+        background: #fff;
+        border: 1px solid #ccc;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>CONTRATO DE GARANTÍA LIMITADA</h1>
-    <p><strong>Servicio:</strong> Suscripción Canva Pro Educación (duración: 1 año)</p>
-    <p><strong>Vendedor:</strong> Cavagnaro Store</p>
-    <p><strong>Fecha:</strong> 15/06/2025</p>
-    <p><strong>Falla:</strong> Parche de actualización; Cambio de proveedor</p>
+  <main class="container">
+    <header class="header">
+      <h1>CONTRATO DE GARANTÍA LIMITADA</h1>
+      <p><strong>Servicio:</strong> Suscripción Canva Pro Educación (duración: 1 año)</p>
+      <p><strong>Vendedor:</strong> Cavagnaro Store</p>
+      <p><strong>Fecha:</strong> 28/03/2026</p>
+      <p><strong>Motivo de falla cubierto:</strong> Parche de actualización o cambio de proveedor</p>
+    </header>
 
-    <h2>1. Objeto del contrato</h2>
-    <p>El presente documento establece los términos y condiciones de la garantía limitada que el vendedor entrega al cliente, con relación a la adquisición de una suscripción digital a Canva Pro Educación, válida por tres (1) año, junto con un curso gratuito de uso básico e intermedio de la plataforma.</p>
+    <section class="content">
+      <div class="summary">
+        <div class="card">
+          <strong>Producto</strong>
+          Suscripción digital Canva Pro Educación
+        </div>
+        <div class="card">
+          <strong>Duración</strong>
+          1 año
+        </div>
+        <div class="card">
+          <strong>Garantía</strong>
+          30 días desde la activación
+        </div>
+        <div class="card">
+          <strong>Canal de soporte</strong>
+          WhatsApp, Messenger, correo e Instagram
+        </div>
+      </div>
 
-    <h2>2. Naturaleza del producto</h2>
-    <p>El producto corresponde a una suscripción digital a Canva Pro Educación con duración de un año, más el acceso a un curso gratuito en formado pdf, diseñado para que el cliente aproveche al máximo las herramientas de la plataforma.</p>
+      <section class="section">
+        <h2>1. Objeto del contrato</h2>
+        <p>
+          El presente documento establece los términos y condiciones de la garantía limitada que el vendedor entrega al cliente en relación con la adquisición de una suscripción digital a Canva Pro Educación, válida por un (1) año, junto con un curso gratuito de uso básico e intermedio de la plataforma.
+        </p>
+      </section>
 
-    <h2>3. Activación del servicio</h2>
-    <p>La activación de la suscripción puede realizarse antes de que se haya efectuado el pago completo, en casos donde el vendedor así lo permita como cortesía o por gestión anticipada.
-    Una vez activado el servicio, el cliente deberá completar el pago en los plazos acordados. Al recibir la suscripción, el cliente recibe también acceso al curso gratuito.</p>
+      <section class="section">
+        <h2>2. Naturaleza del producto</h2>
+        <p>
+          El producto corresponde a una suscripción digital a Canva Pro Educación con duración de un año, además del acceso a un curso gratuito en formato PDF, diseñado para que el cliente aproveche al máximo las herramientas de la plataforma.
+        </p>
+      </section>
 
-    <h2>4. Entrega del contrato</h2>
-    <p>El presente contrato es emitido posterior a la compra y sirve como respaldo formal del servicio prestado y las condiciones de garantía aceptadas por el cliente al momento de la transacción.</p>
+      <section class="section">
+        <h2>3. Activación del servicio</h2>
+        <p>
+          La activación de la suscripción podrá realizarse antes de que se haya efectuado el pago completo, en aquellos casos en que el vendedor así lo permita como cortesía o por gestión anticipada.
+        </p>
+        <p>
+          Una vez activado el servicio, el cliente deberá completar el pago en los plazos acordados. Al recibir la suscripción, el cliente recibirá también acceso al curso gratuito.
+        </p>
+      </section>
 
-    <h2>5. Cobertura de la garantía</h2>
-    <p>La garantía cubre exclusivamente los primeros treinta (30) días del servicio. En caso de presentarse una falla técnica, el cliente deberá notificarla dentro de las veinticuatro (24) horas corridas posteriores a la detección del inconveniente.
-Una vez recibido el reclamo, se enviará un correo al soporte Canva para gestionar la incidencia, y la respuesta estará disponible dentro de un plazo de entre cuarenta y ocho (48) y setenta y dos (72) horas laborales.</p>
+      <section class="section">
+        <h2>4. Entrega del contrato</h2>
+        <p>
+          El presente contrato se emite con posterioridad a la compra y sirve como respaldo formal del servicio prestado y de las condiciones de garantía aceptadas por el cliente al momento de la transacción.
+        </p>
+      </section>
 
-    <h2>6. Exclusión de la garantía</h2>
-    <p>La garantía quedará sin efecto si:</p>
-    <ul>
-      <li>El cliente no informa el problema en un plazo máximo de cuarenta y ocho (48) horas corridas desde que el administrador detecta la falla.</li>
-      <li>El cliente hace uso indebido de la cuenta (como compartirla, alterar datos, o infringir las políticas de Canva).</li>
-      <li>Canva realiza cambios internos en su plataforma que escapan al control del vendedor.</li>
-      <li>El cliente no sigue las instrucciones dadas para la activación y uso correcto.</li>
-    </ul>
+      <section class="section">
+        <h2>5. Cobertura de la garantía</h2>
+        <p>
+          La garantía cubre exclusivamente los primeros treinta (30) días del servicio. En caso de presentarse una falla técnica, el cliente deberá notificarla dentro de las veinticuatro (24) horas corridas posteriores a la detección del inconveniente.
+        </p>
+        <p>
+          Una vez recibido el reclamo, se enviará un correo al soporte de Canva para gestionar la incidencia, y la respuesta estará disponible dentro de un plazo de entre cuarenta y ocho (48) y setenta y dos (72) horas hábiles.
+        </p>
+      </section>
 
-    <h2>7. Horario de garantía</h2>
-    <p>El horario de atención para solicitudes relacionadas con garantías, ya sea a través de WhatsApp, Messenger, correo electrónico o la página de Instagram, estará disponible de lunes a viernes, desde las 09:00 a.m. hasta las 21:00 p.m., y los días sábados desde las 09:00 a.m. hasta las 13:00 p.m. Una vez enviada la solicitud para resolver algún inconveniente con la cuenta, el administrador se pondrá en contacto en un plazo máximo de 48 horas laborables.</p>
-    
-    <h2>8. Política de devoluciones</h2>
-    <p>No se aceptan devoluciones. Al tratarse de un producto digital y de carácter no revocable, el cliente entiende y acepta que no tendrá derecho a reembolso, total ni parcial, por ningún motivo una vez realizada la activación del servicio. Sin embargo aquellas cuentas entregadas entregadas con menos de 72 horas después de la falla o que el administrador considere, se le realizará una devolución parcial en un plazo máximo de 14 días laborables.</p>
+      <section class="section">
+        <h2>6. Exclusión de la garantía</h2>
+        <p>La garantía quedará sin efecto en los siguientes casos:</p>
+        <ul>
+          <li>Si el cliente no informa el problema dentro del plazo establecido.</li>
+          <li>Si el cliente hace uso indebido de la cuenta, como compartirla, alterar datos o infringir las políticas de Canva.</li>
+          <li>Si Canva realiza cambios internos en su plataforma que escapan al control del vendedor.</li>
+          <li>Si el cliente no sigue las instrucciones entregadas para la activación y el uso correcto del servicio.</li>
+        </ul>
+      </section>
 
-    <h2>9. Curso gratuito</h2>
-    <p>Como parte del servicio ofrecido, el cliente recibirá acceso a un curso gratuito que recibirá mediante el correo electrónico que uso para la suscripción en un plazo máximo de setenta y dos (72) horas laborales. Dicho curso cubre funciones esenciales y herramientas prácticas de Canva. Este curso no tiene costo adicional, no es transferible y su acceso está condicionado a la activación de la suscripción.</h2>
-    
-    <h2>10. Políticas de exclusión de la cuenta y eliminación del usuario</h2>
-<p>El vendedor se reserva el derecho de excluir, suspender o eliminar de forma permanente la cuenta del cliente sin derecho a reembolso en los siguientes casos:</p>
-<ul>
-  <li><strong>Compartir la cuenta:</strong> Si el cliente comparte su acceso a terceros por correo, enlaces o contraseñas.</li>
-  <li><strong>Invitar a nuevas personas sin autorización:</strong> Agregar miembros al equipo sin aprobación expresa del vendedor.</li>
-  <li><strong>Incumplimiento de las normas de Canva:</strong> Cualquier infracción a los términos de uso, como uso indebido, contenido prohibido o violaciones de propiedad intelectual.</li>
-  <li><strong>Alteración no autorizada de datos:</strong> Modificar correo electrónico, nombre, configuración del equipo o eliminar miembros sin permiso.</li>
-  <li><strong>Suplantación de identidad o fraude:</strong> Uso de información falsa o suplantación de identidad.</li>
-  <li><strong>Reincidencia:</strong> Repetir cualquier conducta indebida mencionada.</li>
-</ul>
-<p>La detección de estas acciones será evaluada por el administrador del servicio, quien podrá proceder con la suspensión o eliminación inmediata del usuario sin previo aviso. Esta acción es irrevocable y no dará lugar a ningún tipo de reembolso. Canva también puede hacerlo sin previo aviso, y se prodecerá a la eliminación del servicio, volviendosé de forma gratuita.</p>
-    
-    <h2>11.Aceptacionde términos</h2>
-    <p>El cliente, al momento de completar el pago o utilizar la cuenta, reconoce haber leído y aceptado los términos establecidos en este contrato, así como las limitaciones y condiciones aquí descritas.</p>
-  </div>
+      <section class="section">
+        <h2>7. Horario de atención de garantía</h2>
+        <p>
+          La atención para solicitudes relacionadas con garantías, ya sea a través de WhatsApp, Messenger, correo electrónico o Instagram, estará disponible de lunes a viernes desde las 09:00 hasta las 21:00 horas, y los sábados desde las 09:00 hasta las 13:00 horas.
+        </p>
+        <p>
+          Una vez enviada la solicitud para resolver algún inconveniente con la cuenta, el administrador se pondrá en contacto en un plazo máximo de cuarenta y ocho (48) horas hábiles.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. Política de devoluciones</h2>
+        <p>
+          No se aceptan devoluciones. Al tratarse de un producto digital y de carácter no revocable, el cliente entiende y acepta que no tendrá derecho a reembolso total ni parcial una vez realizada la activación del servicio.
+        </p>
+        <p>
+          Sin perjuicio de lo anterior, en aquellos casos en que la cuenta presente fallas dentro de las primeras setenta y dos (72) horas desde su entrega, o en situaciones que el administrador considere justificadas, podrá evaluarse una devolución parcial, la cual se realizaría en un plazo máximo de catorce (14) días hábiles.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. Curso gratuito</h2>
+        <p>
+          Como parte del servicio ofrecido, el cliente recibirá acceso a un curso gratuito mediante el correo electrónico utilizado para la suscripción, en un plazo máximo de setenta y dos (72) horas hábiles.
+        </p>
+        <p>
+          Dicho curso cubre funciones esenciales y herramientas prácticas de Canva. Este curso no tiene costo adicional, no es transferible y su acceso está condicionado a la activación de la suscripción.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Políticas de exclusión de la cuenta y eliminación del usuario</h2>
+        <p>
+          El vendedor se reserva el derecho de excluir, suspender o eliminar de forma permanente la cuenta del cliente, sin derecho a reembolso, en los siguientes casos:
+        </p>
+        <ul>
+          <li><strong>Compartir la cuenta:</strong> si el cliente comparte su acceso con terceros por correo, enlaces o contraseñas.</li>
+          <li><strong>Invitar a nuevas personas sin autorización:</strong> si agrega miembros al equipo sin aprobación expresa del vendedor.</li>
+          <li><strong>Incumplimiento de las normas de Canva:</strong> ante cualquier infracción a los términos de uso, contenido prohibido o violaciones de propiedad intelectual.</li>
+          <li><strong>Alteración no autorizada de datos:</strong> si modifica correo electrónico, nombre, configuración del equipo o elimina miembros sin autorización.</li>
+          <li><strong>Suplantación de identidad o fraude:</strong> si utiliza información falsa o suplanta identidad.</li>
+          <li><strong>Reincidencia:</strong> si repite cualquiera de las conductas indebidas señaladas anteriormente.</li>
+        </ul>
+        <p>
+          La detección de estas acciones será evaluada por el administrador del servicio, quien podrá proceder con la suspensión o eliminación inmediata del usuario, sin previo aviso. Esta medida será irrevocable y no dará lugar a reembolso alguno.
+        </p>
+        <p>
+          Asimismo, Canva podrá aplicar restricciones o eliminaciones de cuenta conforme a sus propias políticas, sin intervención del vendedor.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Aceptación de términos</h2>
+        <p>
+          El cliente, al momento de completar el pago o utilizar la cuenta, reconoce haber leído y aceptado los términos establecidos en este contrato, así como las limitaciones y condiciones aquí descritas.
+        </p>
+      </section>
+
+      <div class="footer-note">
+        Este documento tiene carácter informativo y contractual respecto de las condiciones de garantía del servicio digital prestado por Cavagnaro Store.
+      </div>
+    </section>
+  </main>
 </body>
 </html>
